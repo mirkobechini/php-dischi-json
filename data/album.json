@@ -2,37 +2,37 @@
     {
         "title": "New Jersey",
         "artist": "Bon Jovi",
-        "label": "Mercury",
+        "cover": "./assets/img/bon-jovi-new-jersey.jpg",
         "year": 1988
     },
     {
         "title": "Live at Wembley '86",
         "artist": "Queen",
-        "label": "EMI",
+        "cover": "./assets/img/queen-live-at-wembley.webp",
         "year": 1992
     },
     {
         "title": "Ten's Summoner's Tales",
         "artist": "Sting",
-        "label": "A&M",
+        "cover": "./assets/img/sting-tens-summoners-tales.jpeg",
         "year": 1993
     },
     {
         "title": "Steve Gadd Band",
         "artist": "Steve Gadd Band",
-        "label": "Stretch",
+        "cover": "./assets/img/steve-gadd-band.jpg",
         "year": 2018
     },
     {
         "title": "Brave New World",
         "artist": "Iron Maiden",
-        "label": "EMI",
+        "cover": "./assets/img/iron-maiden-brave-new-world.jpg",
         "year": 2000
     },
     {
         "title": "One More Car, One More Rider",
         "artist": "Eric Clapton",
-        "label": "Reprise",
+        "cover": "./assets/img/eric-clapton-one-more-car.jpeg",
         "year": 2002
     }
 ]
