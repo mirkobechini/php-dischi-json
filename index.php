@@ -32,21 +32,19 @@ $albumList = readAlbums('./data/album.json');
 
     <!-- Main -->
     <main>
-        <div class="bg-secondary">
+        <div class="bg-secondary-subtle">
 
-            <div class="container py-2">
-                
-                    <div class="row row-cols-3 g-4">
-
+            <div class="container p-5">
+                    <div class="row row-cols-3 g-2">
                         <?php foreach($albumList as $album){?>
-                           <div class="col">
+                           <div class="col-4">
 
-                               <div class="card text-center bg-dark-subtle text-white h-100">
+                               <div class="card text-center bg-secondary text-white h-100" style="max-width: 220px;">
                                    <div class="card-body">
-                                       <img src="<?php echo $album['cover']; ?>" class="card-img-top mb-2" alt="<?php echo $album['title']; ?>" style="height: 200px; object-fit: contain;">
+                                       <img src="<?php echo $album['cover']; ?>" class="card-img-top mb-2" alt="<?php echo $album['title']; ?>" style="width: 100%; height: 180px; object-fit: cover;">
                                        <h5 class="card-title fw-bold mb-2"><?php echo $album['title']; ?></h5>
-                                       <p class="card-text text-white-50 mb-2"><?php echo $album['artist']; ?></p>
-                                       <p class="card-text text-secondary fs-6 mb-0"><?php echo $album['year']; ?></p>
+                                       <p class="card-text mb-2"><?php echo $album['artist']; ?></p>
+                                       <p class="card-text  fw-bold fs-6 mb-0"><?php echo $album['year']; ?></p>
                                     </div>
                                 </div>
                             </div>
