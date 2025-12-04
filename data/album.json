@@ -1,0 +1,38 @@
+[
+    {
+        "album": "New Jersey",
+        "artist": "Bon Jovi",
+        "label": "Mercury",
+        "year": 1988
+    },
+    {
+        "album": "Live at Wembley '86",
+        "artist": "Queen",
+        "label": "EMI",
+        "year": 1992
+    },
+    {
+        "album": "Ten's Summoner's Tales",
+        "artist": "Sting",
+        "label": "A&M",
+        "year": 1993
+    },
+    {
+        "album": "Steve Gadd Band",
+        "artist": "Steve Gadd Band",
+        "label": "Stretch",
+        "year": 2018
+    },
+    {
+        "album": "Brave New World",
+        "artist": "Iron Maiden",
+        "label": "EMI",
+        "year": 2000
+    },
+    {
+        "album": "One More Car, One More Rider",
+        "artist": "Eric Clapton",
+        "label": "Reprise",
+        "year": 2002
+    }
+]
