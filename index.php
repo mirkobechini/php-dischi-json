@@ -1,7 +1,9 @@
 
 <?php 
 
-$album_json = ["ciao", "io", "te"]
+$albumFile = file_get_contents('./data/album.json');
+
+$albumList = json_decode($albumFile, true);
 
 ?>
 
@@ -33,15 +35,13 @@ $album_json = ["ciao", "io", "te"]
     <main>
         <div class="bg-secondary">
 
-            <div class="container">
+            <div class="container py-2">
                 <ul class = "list-group">
                     
                     <?php
-                foreach($album_json as $album){
-                    echo "<li>$album</li>";
-                }
-                
-                ?>
+                foreach($albumList as $album){?>
+                    <li><?php echo $album["title"] ;?></li>
+                <?php } ?>
             </ul>
         </div>
     </div>
