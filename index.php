@@ -1,5 +1,6 @@
-<?php 
+<?php
 
+session_start();
 require_once './functions.php';
 
 $filePath = './data/album.json';
@@ -61,13 +62,13 @@ $albumList = readAlbums($filePath);
                 </div>
 
                 <!-- Success Message -->
-                <?php if(false) { ?>
+                <?php if(isset($_SESSION['added']) && $_SESSION['added']) { ?>
                     <div class="alert alert-success col-6 mx-auto text-center" role="alert">
                         Album added
-                        <br>
-                        <?php echo $_POST['title']; ?>
                     </div>
-                <?php } ?>
+                    <?php
+                    unset($_SESSION['added']);
+                } ?>
 
                 <hr>
                 <!-- Albums Section -->
