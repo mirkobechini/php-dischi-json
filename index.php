@@ -1,9 +1,8 @@
-
 <?php 
 
-$albumFile = file_get_contents('./data/album.json');
+require_once './functions.php';
 
-$albumList = json_decode($albumFile, true);
+$albumList = readAlbums('./data/album.json');
 
 ?>
 
@@ -36,13 +35,24 @@ $albumList = json_decode($albumFile, true);
         <div class="bg-secondary">
 
             <div class="container py-2">
-                <ul class = "list-group">
-                    
-                    <?php
-                foreach($albumList as $album){?>
-                    <li><?php echo $album["title"] ;?></li>
-                <?php } ?>
-            </ul>
+                
+                    <div class="row row-cols-3 g-4">
+
+                        <?php foreach($albumList as $album){?>
+                           <div class="col">
+
+                               <div class="card text-center bg-dark-subtle text-white h-100">
+                                   <div class="card-body">
+                                       <img src="<?php echo $album['cover']; ?>" class="card-img-top mb-2" alt="<?php echo $album['title']; ?>" style="height: 200px; object-fit: contain;">
+                                       <h5 class="card-title fw-bold mb-2"><?php echo $album['title']; ?></h5>
+                                       <p class="card-text text-white-50 mb-2"><?php echo $album['artist']; ?></p>
+                                       <p class="card-text text-secondary fs-6 mb-0"><?php echo $album['year']; ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <?php } ?>
+                    </div>
         </div>
     </div>
 
